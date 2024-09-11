@@ -1,0 +1,145 @@
+[
+    {
+      "id": 1,
+      "title": "Kickoff Meeting",
+      "date": "2024-07-05",
+      "start time": "6pm",
+      "agenda": [
+        {
+        "title": "Introduction of attendees",
+        "time allotted": "10 minutes",
+        "discussion": ["Introduce and get to know each other’s background and skills"],
+        "conclusion": [],
+        "action items": [
+          {
+            "name": "Create telegram group",
+            "personincharge": "LiXing",
+            "Deadline": "2024-07-05"
+          }
+        ]
+        },
+        {
+          "title": "Assigning of roles",
+          "time allotted": "10 minutes",
+          "discussion": ["Select project leader", "Assign roles based on coding experience"],
+          "conclusion": ["Each member should participate in programming, not just documentation."],
+          "action items": [
+            {
+              "name": "Email team info to professor",
+              "personincharge": "Cheng Jie",
+              "Deadline": "2024-07-05"
+            }
+          ]
+          },
+          {
+            "title": "Review project background",
+            "time allotted": "30 minutes",
+            "discussion": ["Type of application – mobile", "Target audience and types of users: coffee enthusiasts, casual coffee drinkers, travellers, coffee shop vendors/merchants.","Discuss examples of main features that we might want to include."],
+            "conclusion": ["Conduct market research first then propose and finalise features in the following week."],
+            "action items": [
+              {
+                "name": "Conduct market research and upload to google drive",
+                "personincharge": "Everyone",
+                "Deadline": "2024-07-11"
+              }
+            ]
+            },
+            {
+              "title": "Discuss software tools and methodology",
+              "time allotted": "15 minutes",
+              "discussion": ["Discuss possible software tools and stacks to use – OS, programming languages for frontend & backend, database and cloud.", "Discuss software methodology to use."],
+              "conclusion": ["Scrum methodology is used, because most teammates have experience with it."],
+              "action items": [
+                {
+                  "name": "Register a Taiga account ",
+                  "personincharge": "Everyone",
+                  "Deadline": "2024-05-05"
+                },
+                {
+                  "name": "Create Scrum project in Taiga",
+                  "personincharge": "LiXing",
+                  "Deadline": "2024-05-05"
+                },
+                {
+                  "name": "Perform research and further discussion in telegram group",
+                  "personincharge": "Everyone",
+                  "Deadline": "2024-05-08"
+                }
+              ]
+              }
+      ],
+      "next meeting": "2024-07-12"
+    },
+    {
+      "id": 2,
+      "title": "Feature discussion",
+      "date": "2024-07-12",
+      "start time": "6pm",
+      "agenda": [
+        {
+        "title": "Review market research",
+        "time allotted": "15 minutes",
+        "discussion": ["Discuss the pros and cons of the different services.","How can our applications stand out when there are so many existing services."],
+        "conclusion": [],
+        "action items": [
+          {
+            "name": "Upload information to Google Drive",
+            "personincharge": "Cheng Jie",
+            "Deadline": "2024-07-13"
+          }
+        ]
+        },
+        {
+          "title": "Discuss features",
+          "time allotted": "30 minutes",
+          "discussion": ["Target audience & types of users: coffee enthusiast, casual coffee drinker, travelers, coffee shops/café vendors.","Identify most common features that all the existing services have." ,"Brainstorm ideas, think about if we are the users, what would we want to have."],
+          "conclusion": [],
+          "action items": [
+            {
+              "name": "Add and edit features on Google Drive",
+              "personincharge": "Everyone",
+              "Deadline": "2024-07-19"
+            },
+            {
+              "name": "Send to Mr. Ee for approval",
+              "personincharge": "LiXing",
+              "Deadline": "2024-07-19"
+            }
+          ]
+          },
+          {
+            "title": " Discuss software tools and methodology",
+            "time allotted": "15 minutes",
+            "discussion": ["Review of the tentative programming tools we selected (React Native, NodeJs + ExpressJs, MongoDB, Google Cloud, Scrum).","Share ways to learn (YouTube Videos, Udemy tutorials, example projects) with each other.","Share experience on using Taiga with those who have no experience."],
+            "conclusion": [" Everyone need to learn, because everyone needs to contribute to the programming."],
+            "action items": [
+              {
+                "name": "Share links/info in Telegram group ",
+                "personincharge": "Everyone",
+                "Deadline": "No deadline required"
+              }
+            ]
+            },
+            {
+              "title": "Discuss risk register",
+              "time allotted": "20 minutes",
+              "discussion": ["Discuss potential risks that might arise during the project.","Discuss the impact and probability of happening.","Discuss possible ways to mitigate such risks."],
+              "conclusion": ["Each member should try their best to avoid these risks."],
+              "action items": [
+                {
+                  "name": "Create and complete risk register ",
+                  "personincharge": "Everyone",
+                  "Deadline": "2024-07-19"
+                },
+                {
+                  "name": "Send to Mr. Ee ",
+                  "personincharge": "LiXing",
+                  "Deadline": "2024-07-19"
+                }
+              ]
+              }
+      ],
+      "next meeting": "2024-07-19"
+    }
+  ]
+  
