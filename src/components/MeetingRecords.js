@@ -9,7 +9,7 @@ const MeetingRecords = () => {
   };
 
   return (
-    <section className="min-h-screen p-8 bg-stone-200">
+    <section id="meetings" className="min-h-screen p-8 bg-stone-200">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 text-center">Meeting Records</h1>
         <div className="space-y-8">
             {meetingsData.map((meeting) => (

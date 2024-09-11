@@ -43,13 +43,13 @@ const Header = () => {
               <Link to="/#about" className="hover:text-gray-400">About</Link>
             </li>
             <li>
-              <Link to="/team-structure" className="hover:text-gray-400">Team Structure</Link>
+              <Link to="/team-structure#team" className="hover:text-gray-400">Team Structure</Link>
             </li>
             <li>
-              <Link to="/meetings" className="hover:text-gray-400">Meetings</Link>
+              <Link to="/meetings#meetings" className="hover:text-gray-400">Meetings</Link>
             </li>
             <li>
-              <Link to="/documents" className="hover:text-gray-400">Documents</Link>
+              <Link to="/documents#documents" className="hover:text-gray-400">Documents</Link>
             </li>
           </ul>
         </nav>

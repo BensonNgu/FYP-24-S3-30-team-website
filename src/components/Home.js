@@ -4,7 +4,7 @@ import backgroundImage from '../resources/coffeeshop.webp'
 const Home = ( {id} ) => {
     return (
         <section id={id} 
-            className="full-page-height bg-cover bg-center"
+            className="full-page-height bg-cover bg-center flex items-center justify-center"
             style = {{
                 backgroundImage: `url(${backgroundImage})`,
             }}
