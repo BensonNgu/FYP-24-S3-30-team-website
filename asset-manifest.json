@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FYP-24-S3-30-team-website/static/css/main.bead705f.css",
-    "main.js": "/FYP-24-S3-30-team-website/static/js/main.772f68f0.js",
+    "main.js": "/FYP-24-S3-30-team-website/static/js/main.28206a1a.js",
     "static/media/coffeeshop.webp": "/FYP-24-S3-30-team-website/static/media/coffeeshop.f0a4aa28880ef2226261.webp",
     "index.html": "/FYP-24-S3-30-team-website/index.html",
     "main.bead705f.css.map": "/FYP-24-S3-30-team-website/static/css/main.bead705f.css.map",
-    "main.772f68f0.js.map": "/FYP-24-S3-30-team-website/static/js/main.772f68f0.js.map"
+    "main.28206a1a.js.map": "/FYP-24-S3-30-team-website/static/js/main.28206a1a.js.map"
   },
   "entrypoints": [
     "static/css/main.bead705f.css",
-    "static/js/main.772f68f0.js"
+    "static/js/main.28206a1a.js"
   ]
 }
