@@ -1,28 +1,46 @@
-// src/pages/About.js
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faStore, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 const About = ({ id }) => {
     return (
         <section 
             id={id} 
-            className="full-page-height p-8 bg-stone-300 text-gray-800 bg-cover bg-center flex items-center"
-            style={{
-                backgroundImage: `url('path-to-your-background-image')`,
-            }}
+            className="full-page-height px-8 pb-3 bg-stone-300 text-gray-800 bg-cover bg-center flex items-center"
         >
+
             <div className="container mx-auto flex flex-col lg:flex-row items-center max-w-6xl">
                 {/* Title Section */}
-                <div className="flex-1 lg:w-1/3 p-4">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+                <div className="flex-1 lg:w-1/3 px-4 pb-4 text-center">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:mb-8 text-gray-900 leading-tight">
                         About This Project
                     </h1>
+                    <FontAwesomeIcon icon={faCoffee} className="text-6xl lg:text-7xl text-gray-700 mt-4 lg:mt-6" />
                 </div>
 
-                {/* Content Section */}
-                <div className="flex-1 lg:w-2/3 p-4">
-                    <p className="text-lg md:text-xl leading-relaxed text-gray-700">
-                        The scope of the project is to build a platform that connects coffee lovers, shop owners, and coffee experts. The platform will allow users to discover new coffee shops based on location and menu offerings, share reviews and photos, and engage with the coffee community. Shop owners will be able to promote their businesses, manage listings, and interact with customers by showcasing special deals and events. Coffee experts will provide insights and tips, enriching users’ knowledge of coffee. The platform will serve as a hub for exploring, sharing, and celebrating coffee culture.
-                    </p>
+
+               {/* Content Section */}
+                <div className="flex-1 p-4 bg-white shadow-lg rounded-lg mx-5">
+                    <div className="grid grid-cols-1 gap-8">
+                        <div className="flex items-center justify-start text-left p-4 lg:p-8">
+                            <FontAwesomeIcon icon={faUsers} className="text-4xl lg:text-6xl text-gray-800 mr-4 lg:mr-6" />
+                            <p className="text-sm lg:text-lg font-mono leading-relaxed text-gray-700">
+                                Connect with coffee lovers, share reviews, and discover new shops.
+                            </p>
+                        </div>
+                        <div className="flex items-center justify-start text-left p-4 lg:p-8">
+                            <FontAwesomeIcon icon={faStore} className="text-4xl lg:text-6xl text-gray-800 mr-4 lg:mr-6" />
+                            <p className="text-sm lg:text-lg font-mono leading-relaxed text-gray-700">
+                                Shop owners can promote their businesses, manage listings, and engage with the community.
+                            </p>
+                        </div>
+                        <div className="flex items-center justify-start text-left p-4 lg:p-8">
+                            <FontAwesomeIcon icon={faCoffee} className="text-4xl lg:text-6xl text-gray-800 mr-4 lg:mr-6" />
+                            <p className="text-sm lg:text-lg font-mono leading-relaxed text-gray-700">
+                                Coffee experts will provide tips and insights about coffee, enriching your experience.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
