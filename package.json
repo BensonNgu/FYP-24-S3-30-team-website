@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://bensonngu.github.io/FYP-24-S3-30-team-website",
+  "homepage": "https://bensonngu.github.io/FYP-24-S3-30-team-website",
   "name": "fyp-24-s3-40-team-website",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +15,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "googleapis": "^144.0.0",
     "pdfjs-dist": "^3.4.120",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -26,7 +27,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
