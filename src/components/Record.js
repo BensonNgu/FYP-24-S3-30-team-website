@@ -1,6 +1,7 @@
 import React from 'react';
 import meetingsData from '../resources/meeting.json'; // Import JSON data
 
+
 const Record = ({ meetingId, onClose }) => {
   // Find the meeting with the given ID
   const meeting = meetingsData.find((meeting) => meeting.id === meetingId);
@@ -10,8 +11,8 @@ const Record = ({ meetingId, onClose }) => {
   }
 
   return (
-    <div className="fixed inset-0 bg-gray-800 bg-opacity-85 flex items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full h-5/6 overflow-y-auto">
+    <div className="fixed inset-0 bg-gray-800 bg-opacity-35 flex items-center justify-center py-10 px-5">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-4xl w-full h-5/6 overflow-y-auto custom-scrollbar">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-3xl font-semibold">{meeting.title}</h2>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-800">

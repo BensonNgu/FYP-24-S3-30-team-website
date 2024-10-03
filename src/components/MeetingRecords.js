@@ -18,6 +18,7 @@ const MeetingRecords = () => {
   return (
     <section id="meetings" className="min-h-screen p-8 bg-stone-200">
       <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 text-center">Meeting Records</h1>
+      <hr className="border-t-3 border-t-black my-4" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {meetingsData.map((meeting) => (
           <div key={meeting.id} className="bg-white rounded-lg shadow-lg border border-gray-200">
