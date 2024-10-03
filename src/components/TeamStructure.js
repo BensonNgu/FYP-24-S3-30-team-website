@@ -1,7 +1,10 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Button } from '@mui/material';
+import EmailIcon from '@mui/icons-material/Email'; // MUI Email Icon
+import GitHubIcon from '@mui/icons-material/GitHub'; // MUI GitHub Icon
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount'; // Supervisor Icon
+import StarIcon from '@mui/icons-material/Star'; // Team Leader Icon
+import PersonIcon from '@mui/icons-material/Person'; // Team Member Icon
 
 const supervisorAndAssessor = [
     {name: 'Ee Kiam Keong', position: 'Supervisor', email: 'kkeesg@yahoo.com.sg'},
@@ -51,8 +54,17 @@ const teamMembers = [
         email: 'zwang060@mymail.sim.edu.sg',
         github: '' 
     },
-  // Add more team members here
 ];
+
+const getIconForPosition = (position) => {
+    if (position === 'Supervisor' || position === 'Accessor') {
+        return <SupervisorAccountIcon className="text-lg mr-2 text-gray-600" />;
+    } else if (position === 'Team Leader') {
+        return <StarIcon className="text-lg mr-2 text-yellow-500" />;
+    } else {
+        return <PersonIcon className="text-lg mr-2 text-gray-600" />;
+    }
+};
 
 const TeamStructure = () => {
     return (
@@ -63,12 +75,19 @@ const TeamStructure = () => {
                     {supervisorAndAssessor.map((person, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                             <h3 className="text-2xl font-semibold text-gray-900">{person.name}</h3>
-                            <p className="text-lg font-medium text-gray-700">{person.position}</p>
+                            <p className="text-lg font-medium text-gray-700 flex items-center">
+                                {getIconForPosition(person.position)}
+                                {person.position}
+                            </p>
                             <p className="mt-2">
-                                <a href={`mailto:${person.email}`} className="text-blue-600 hover:underline flex items-center">
-                                    <FontAwesomeIcon icon={faEnvelope} className="text-lg mr-2" />
-                                    {person.email}
-                                </a>
+                                <Button
+                                  href={`mailto:${person.email}`}
+                                  startIcon={<EmailIcon />} // MUI Email Icon
+                                  color="primary"
+                                  variant="text"
+                                >
+                                  Email
+                                </Button>
                             </p>
                         </div>
                     ))}
@@ -81,22 +100,35 @@ const TeamStructure = () => {
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
                             <h3 className="text-2xl font-semibold text-gray-900">{member.name}</h3>
-                            <p className="text-lg font-medium text-gray-700">{member.position}</p>
+                            <p className="text-lg font-medium text-gray-700 flex items-center">
+                                {getIconForPosition(member.position)}
+                                {member.position}
+                            </p>
                             {member.UOWID && 
                                 <p className="mt-2"><strong>UOW ID:</strong> {member.UOWID}</p>}
                             {member.email && 
                                 <p className="mt-2">
-                                    <a href={`mailto:${member.email}`} className="text-blue-600 hover:underline flex items-center">
-                                        <FontAwesomeIcon icon={faEnvelope} className="text-lg mr-2" />
-                                        {member.email}
-                                    </a>
+                                    <Button
+                                      href={`mailto:${member.email}`}
+                                      startIcon={<EmailIcon />} // MUI Email Icon
+                                      color="primary"
+                                      variant="text"
+                                    >
+                                      Email
+                                    </Button>
                                 </p>}
                             {member.github && 
                                 <p className="mt-2">
-                                    <a href={`https://github.com/${member.github}`} className="text-blue-600 hover:underline flex items-center" target="_blank" rel="noopener noreferrer">
-                                        <FontAwesomeIcon icon={faGithub} className="text-lg mr-2" />
-                                        {member.github}
-                                    </a>
+                                    <Button
+                                      href={`https://github.com/${member.github}`}
+                                      startIcon={<GitHubIcon />} // MUI GitHub Icon
+                                      color="secondary"
+                                      variant="text"
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                    >
+                                      GitHub
+                                    </Button>
                                 </p>}
                         </div>
                     ))}
