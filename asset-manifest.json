@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FYP-24-S3-30-team-website/static/css/main.e73ff043.css",
-    "main.js": "/FYP-24-S3-30-team-website/static/js/main.26ef41ce.js",
+    "main.js": "/FYP-24-S3-30-team-website/static/js/main.7ef420c2.js",
     "static/media/coffeeshop.webp": "/FYP-24-S3-30-team-website/static/media/coffeeshop.f0a4aa28880ef2226261.webp",
     "static/media/coffeeshop2.webp": "/FYP-24-S3-30-team-website/static/media/coffeeshop2.92a8be1b0edbf2809052.webp",
     "static/media/word-icon.png": "/FYP-24-S3-30-team-website/static/media/word-icon.0685594d1a8c4b634407.png",
@@ -9,10 +9,10 @@
     "static/media/pdf-icon.png": "/FYP-24-S3-30-team-website/static/media/pdf-icon.626d78cebcab50413554.png",
     "index.html": "/FYP-24-S3-30-team-website/index.html",
     "main.e73ff043.css.map": "/FYP-24-S3-30-team-website/static/css/main.e73ff043.css.map",
-    "main.26ef41ce.js.map": "/FYP-24-S3-30-team-website/static/js/main.26ef41ce.js.map"
+    "main.7ef420c2.js.map": "/FYP-24-S3-30-team-website/static/js/main.7ef420c2.js.map"
   },
   "entrypoints": [
     "static/css/main.e73ff043.css",
-    "static/js/main.26ef41ce.js"
+    "static/js/main.7ef420c2.js"
   ]
 }
