@@ -11,10 +11,10 @@ const getFileExtension = (fileName) => {
   return fileName.split(".").pop().toLowerCase(); // Extract file extension
 };
 
-const Documents = () => {
+const FinalDocuments = () => {
   const [documents, setDocuments] = useState([]); // Default to an empty array
   const [error, setError] = useState(null);
-  const folderId = "141olBGwuxsbsi_z1JVbpWGbz0JvCQJhJ"; // Replace with your actual folder ID
+  const folderId = "16hadfFR4Fd2swSYfeLl1ciJhxdPMIcas"; // Replace with your actual folder ID
   const apiKey = "AIzaSyBypvuhUJYBM86PVWS6wEujodj4SkA158g"; // Replace with your Google API key
 
   useEffect(() => {
@@ -43,11 +43,8 @@ const Documents = () => {
     <section id="documents" className="bg-stone-200 py-12 px-6 min-h-full">
       <div className="container mx-auto min-h-screen flex flex-col justify-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 text-center">
-        Initial Project Documents
+          Final Documents and Progression
         </h1>
-        <p className="text-lg md:text-xl text-gray-700 text-center">
-          All the research details and progression will be posted here.
-        </p>
         <hr className="border-t-3 border-t-black my-4" />
 
         {error && (
@@ -95,4 +92,4 @@ const Documents = () => {
   );
 };
 
-export default Documents;
+export default FinalDocuments;

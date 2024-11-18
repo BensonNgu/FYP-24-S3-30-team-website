@@ -21,34 +21,36 @@ const Footer = () => {
                 <div>
                     <p className="text-lg font-semibold mb-2">FYP-24-S3-30</p>
                 </div>
-                
+
                 {/* Navigation */}
                 <nav>
                     <div className="mb-4 md:mb-0">
-                            <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
-                            <ul className="space-y-2">
-                            <li><Link to="/team-structure#team" className="hover:text-gray-400">About Us</Link></li>
+                        <h3 className="text-xl font-semibold mb-2">Quick Links</h3>
+                        <ul className="space-y-2">
+                            <li><Link to="/team-structure#team" className="hover:text-gray-400 duration-300">About Us</Link></li>
                             <li>
                                 <a
-                                    href="/"
-                                    className="hover:text-gray-400"
-                                    onClick={handleLinkClick}
+                                    href="https://ilikethatcoffee.bensonngu.cc"
+                                    className="hover:text-gray-400 duration-300"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                // onClick={handleLinkClick}
                                 >
                                     Project Website
                                 </a>
                             </li>
-                            </ul>
-                        </div>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <p className="text-gray-400 text-sm text-center">&copy; 2024 FYP-24-S3-30. All rights reserved.</p>
 
-            <PopUp
+            {/* <PopUp
                 isOpen={isPopUpWindowOpen}
                 onClose={handleClosePopUpWindow}
                 title="Coming Soon"
                 content="The project website is currently under development. Stay tuned!"
-            />
+            /> */}
         </footer>
     );
 };

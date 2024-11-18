@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { HashRouter as Router } from 'react-router-dom'; // Import HashRouter
+import { BrowserRouter  as Router } from 'react-router-dom'; // Import HashRouter
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename="/FYP-24-S3-30-team-website">
       <App />
     </Router>
   </React.StrictMode>

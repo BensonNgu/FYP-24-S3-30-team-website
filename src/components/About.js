@@ -13,16 +13,14 @@ const About = ({ id }) => {
             }}
         >
             {/* Blurred Background Overlay */}
-            <div className="absolute inset-0 bg-black bg-opacity-10 backdrop-blur-lg"></div>
+            <div className="absolute inset-0 bg-white bg-opacity-30 backdrop-blur-lg"></div>
 
             <div className="container md:mx-auto flex flex-col lg:flex-row items-center max-w-6xl relative z-10">
                 {/* Title Section */}
                 <div className="flex-1 lg:w-1/3 px-4 py-4 text-center">
                     <h1
                         className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 lg:mb-8 text-gray-800 leading-tight"
-                        style={{
-                            textShadow: '0px 0px 10px rgba(255, 255, 255, 0.8), 0px 0px 20px rgba(255, 255, 255, 0.5)',
-                        }}
+
                     >
                         About This Project
                     </h1>
@@ -40,19 +38,19 @@ const About = ({ id }) => {
                     <div className="grid grid-cols-1 gap-8">
                         <div className="flex items-center justify-start text-left p-4 lg:p-8">
                             <FontAwesomeIcon icon={faUsers} className="text-4xl lg:text-6xl text-gray-800 mr-4 lg:mr-6" />
-                            <p className="text-sm lg:text-lg font-mono leading-relaxed text-gray-700">
+                            <p className="text-xs lg:text-sm font-mono leading-relaxed text-gray-700">
                                 Connect with coffee lovers, share reviews, and discover new shops.
                             </p>
                         </div>
                         <div className="flex items-center justify-start text-left p-4 lg:p-8">
                             <FontAwesomeIcon icon={faStore} className="text-4xl lg:text-6xl text-gray-800 mr-4 lg:mr-6" />
-                            <p className="text-sm lg:text-lg font-mono leading-relaxed text-gray-700">
+                            <p className="text-xs lg:text-sm font-mono leading-relaxed text-gray-700">
                                 Shop owners can promote their businesses, manage listings, and engage with the community.
                             </p>
                         </div>
                         <div className="flex items-center justify-start text-left p-4 lg:p-8">
                             <FontAwesomeIcon icon={faCoffee} className="text-4xl lg:text-6xl text-gray-800 mr-4 lg:mr-6" />
-                            <p className="text-sm lg:text-lg font-mono leading-relaxed text-gray-700">
+                            <p className="text-xs lg:text-sm font-mono leading-relaxed text-gray-700">
                                 Coffee experts will provide tips and insights about coffee, enriching your experience.
                             </p>
                         </div>

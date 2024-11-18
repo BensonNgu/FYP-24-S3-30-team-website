@@ -7,6 +7,7 @@ import MeetingRecords from './components/MeetingRecords';
 import Documents from './components/Documents';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import FinalDocuments from './components/FinalDocuments';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/team-structure" element={<TeamStructure />} />
           <Route path="/meetings" element={<MeetingRecords />} />
           <Route path="/documents" element={<Documents />} />
+          <Route path="/final-documents" element={<FinalDocuments />} />
         </Routes>
       </main>
 

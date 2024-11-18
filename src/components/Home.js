@@ -1,7 +1,16 @@
 import React from 'react';
 import backgroundImage from '../resources/coffeeshop.webp';
+import { Button } from '@mui/material'
 
 const Home = ({ id }) => {
+
+    const handleScroll = () => {
+        const aboutSection = document.getElementById("about"); // Target the About section
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: "smooth" }); // Smoothly scroll to the section
+        }
+    };
+
     return (
         <section
             id={id}
@@ -24,6 +33,23 @@ const Home = ({ id }) => {
                 <p className="text-white text-lg md:text-xl">
                     Singapore
                 </p>
+                <Button variant="outlined" size="large" onClick={handleScroll} 
+                sx={{
+                    color: "white", // Coffee-brown text
+                    borderColor: "white", // Coffee-brown border
+                    "&:hover": {
+                        color: "#4E342E",
+                        borderColor: "#4E342E", // Darker brown on hover
+                        backgroundColor: "#D7CCC8", // Light coffee-cream background on hover
+                    },
+                    fontWeight: "bold", // Bold text
+                    borderRadius: "12px", // Smooth rounded corners
+                    padding: "10px 30px", // Spacious padding
+                    fontSize: "18px", // Slightly larger font
+                    textTransform: "uppercase", // Uppercase text for emphasis
+                    letterSpacing: "1px", // Slight letter spacing for elegance
+                }}
+                >Project Briefing</Button>
             </div>
         </section>
     );
