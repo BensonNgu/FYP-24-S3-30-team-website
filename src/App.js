@@ -2,15 +2,20 @@ import './App.css';
 import React from 'react';
 import { Route, Routes } from 'react-router-dom'; // No need to import Router
 import Main from './components/Main';
-import TeamStructure from './components/TeamStructure';
-import MeetingRecords from './components/MeetingRecords';
-import Documents from './components/Documents';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import FinalDocuments from './components/FinalDocuments';
 import {Helmet} from "react-helmet";
 
 function App() {
+    React.useEffect(() => {
+        const timer = setTimeout(() => {
+            window.location.href = 'https://fyp24-30.bensonngu.cc'; // replace with actual URL
+        }, 3000); // 3 seconds
+
+        return () => clearTimeout(timer);
+    }, []);
+
+
     return (
         <>
             <Helmet>
@@ -63,10 +68,6 @@ function App() {
                 <main className="flex-grow pt-16 lg:pt-20">
                     <Routes>
                         <Route path="/" element={<Main />} />
-                        <Route path="/team-structure" element={<TeamStructure />} />
-                        <Route path="/meetings" element={<MeetingRecords />} />
-                        <Route path="/documents" element={<Documents />} />
-                        <Route path="/final-documents" element={<FinalDocuments />} />
                     </Routes>
                 </main>
 

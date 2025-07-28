@@ -4,13 +4,6 @@ import { Button } from '@mui/material'
 
 const Home = ({ id }) => {
 
-    const handleScroll = () => {
-        const aboutSection = document.getElementById("about"); // Target the About section
-        if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: "smooth" }); // Smoothly scroll to the section
-        }
-    };
-
     return (
         <section
             id={id}
@@ -25,15 +18,18 @@ const Home = ({ id }) => {
             {/* Content on top of the blurred background */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-center space-y-4 p-4">
                 <h1 className="text-white text-5xl md:text-6xl font-bold leading-tight">
-                    I Like That Coffee
+                    We've Moved!
                 </h1>
                 <p className="text-white text-xl md:text-2xl">
-                    FYP-24-S3-30
+                    Our website has migrated to a new domain.
                 </p>
                 <p className="text-white text-lg md:text-xl">
-                    Singapore
+                    You will be redirected in 3 seconds...
                 </p>
-                <Button variant="outlined" size="large" onClick={handleScroll} 
+                <p className="text-white text-md md:text-lg italic">
+                    If not, click the button below to continue manually.
+                </p>
+                <Button variant="outlined" size="large" onClick={() => window.location.href = 'https://fyp24-30.bensonngu.cc'}
                 sx={{
                     color: "white", // Coffee-brown text
                     borderColor: "white", // Coffee-brown border
@@ -49,7 +45,7 @@ const Home = ({ id }) => {
                     textTransform: "uppercase", // Uppercase text for emphasis
                     letterSpacing: "1px", // Slight letter spacing for elegance
                 }}
-                >Project Briefing</Button>
+                >Go to New Site</Button>
             </div>
         </section>
     );

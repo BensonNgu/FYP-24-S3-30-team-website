@@ -6,10 +6,9 @@ import { BrowserRouter  as Router } from 'react-router-dom'; // Import HashRoute
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    {/*<Router basename="/FYP-24-S3-30-team-website"> Enable this if this was a subpages of a website*/}
-  <Router>
-      <App />
-    </Router>
-  </React.StrictMode>
+    <React.StrictMode>
+        <Router basename="/FYP-24-S3-30-team-website">
+            <App />
+        </Router>
+    </React.StrictMode>
 );

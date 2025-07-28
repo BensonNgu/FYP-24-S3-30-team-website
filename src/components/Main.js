@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Home from './Home';
-import About from './About';
 
 
 
@@ -23,8 +22,6 @@ const Main = () => {
   return (
     <div>
       <Home id="home" />
-      <div className=''></div>
-      <About id="about" />
     </div>
   );
 };
