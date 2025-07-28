@@ -16,7 +16,7 @@ function App() {
       <Header />
 
       {/* Main Content */}
-      <main className="flex-grow">
+      <main className="flex-grow pt-16 lg:pt-20">
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/team-structure" element={<TeamStructure />} />

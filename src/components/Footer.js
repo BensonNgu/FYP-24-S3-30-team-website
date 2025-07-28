@@ -34,7 +34,7 @@ const Footer = () => {
                                     className="hover:text-gray-400 duration-300"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                // onClick={handleLinkClick}
+                                onClick={handleLinkClick}
                                 >
                                     Project Website
                                 </a>
@@ -45,12 +45,19 @@ const Footer = () => {
             </div>
             <p className="text-gray-400 text-sm text-center">&copy; 2024 FYP-24-S3-30. All rights reserved.</p>
 
-            {/* <PopUp
+            <PopUp
                 isOpen={isPopUpWindowOpen}
                 onClose={handleClosePopUpWindow}
-                title="Coming Soon"
-                content="The project website is currently under development. Stay tuned!"
-            /> */}
+                title="📴 Project Concluded"
+                content={
+                    <>
+                        This project has officially concluded.
+                        <br />
+                        The site is no longer maintained.
+                    </>
+                }
+
+            />
         </footer>
     );
 };

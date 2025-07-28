@@ -31,7 +31,7 @@ const Documents = () => {
     };
 
     fetchDocuments();
-  }, []);
+  }, [apiKey, folderId]);
 
   return (
     <section id="documents" className="bg-stone-200 py-12 px-6 min-h-full">

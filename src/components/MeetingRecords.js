@@ -35,7 +35,7 @@ const MeetingRecords = () => {
 
   useEffect(() => {
     fetchDocuments(); // Fetch documents on component mount
-  }, []);
+  }, [apiKey, folderId]);
 
   return (
     <section id="meetings" className="min-h-screen p-8 bg-stone-200">
